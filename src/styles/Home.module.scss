@@ -1,0 +1,33 @@
+#app {
+    margin: 50px auto;
+    max-width: 1400px;
+    padding: 0 40px;
+}
+
+.appTitle {
+    color: var(--grf-gray-300);
+}
+
+.gameList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: right;
+    padding: 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .gameList {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 830px) {
+    .gameList {
+        grid-template-columns: auto;
+    }
+}

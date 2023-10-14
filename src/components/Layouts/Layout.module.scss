@@ -1,0 +1,52 @@
+#app {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+ 
+
+.header { 
+    background-color: var(--grf-bg-layout);
+    height: 75px;
+    padding: 0 100px;
+    border-bottom: 1px solid var(--grf-gray-800);
+}
+
+.headerBrand {
+    background-image: url('../../../public/images/logo.svg');
+    background-position: right -15px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 250px;
+    cursor: pointer;
+}
+ 
+.content {
+    display: flex;
+    width: 100vw;
+}
+
+.contentBody {
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow: auto;
+    background: var(--grf-bg-page);
+}
+
+.contentBody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contentBody::-webkit-scrollbar-track {
+    background: #a5a5a5;
+}
+
+.contentBody::-webkit-scrollbar-thumb {
+    background: #6e6e6e;
+}
+
+.contentBody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

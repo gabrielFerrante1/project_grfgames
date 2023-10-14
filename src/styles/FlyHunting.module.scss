@@ -1,0 +1,21 @@
+#app {
+    margin: 50px auto;
+    max-width: 1400px;
+}
+
+.header {
+    text-align: center;
+
+    .headerTitle {
+        font-size: 40px;
+    }
+
+    .headerSubtitle {
+        font-size: 15px;
+        color: var(--grf-gray-500);
+    }
+}
+
+.gameContainer { 
+    margin: 20px auto 0 auto; 
+}

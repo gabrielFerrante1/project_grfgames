@@ -1,0 +1,86 @@
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/bg_fly_hunting.jpg');
+    background-size: 100% 100%;
+    border: 1px solid var(--grf-gray-800);
+    border-radius: 4px;
+    height: 670px;
+}
+
+.gameLevelsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.gameFlys {
+    padding: 30px 40px;
+    flex: 1;
+}
+
+.gameData {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.gameDataCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 15px;
+    background-color: rgba(136, 136, 136, 0.705);
+    border: 1px solid var(--grf-gray-500);
+    border-radius: 2px;
+}
+
+.gameDataCardHearts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.heartFilledIcon {
+    font-size: 26px;
+
+    path {
+        stroke: var(--grf-gray-800);
+        stroke-width: 2px;
+        transition: all 2s;
+        fill: red;
+    }
+}
+
+.heartNoFillIcon {
+    path {
+        fill: transparent;
+    }
+}
+
+.gameDataCardTime {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gameDataCardTimeLabel {
+    font-weight: 600;
+}
+
+.gameDataCardTimeCount {
+    font-weight: 800;
+    font-size: 19px;
+    color: rgb(201, 8, 8);
+}
+
+.gameOverContainer, .gameWinerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}

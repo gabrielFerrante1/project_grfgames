@@ -1,0 +1,114 @@
+.levelsMenuContainer {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.gameContainer {
+    padding: 0 40px;
+    border: 1px solid var(--grf-gray-800);
+    border-radius: 4px;
+}
+
+.gameContainerHeader {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.gameContainerHeaderInfosContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.gameContainerHeaderInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .gameContainerHeaderInfosLabel {
+        font-weight: 600;
+        color: var(--grf-gray-200);
+    }
+
+    .gameContainerHeaderInfosCount {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--grf-gray-100);
+    }
+}
+
+.gameContainerHeaderProgressBar>div {
+    height: 10px;
+    background-color: var(--grf-gray-800);
+}
+
+.gameContainerBody {
+    padding: 15px 0;
+}
+
+.gameCards {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.gameCardItem {
+    perspective: 1000px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transition: transform .7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+
+    .gameCardItemFront,
+    .gameCardItemBack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 6px;
+    }
+
+    .gameCardItemFront {
+        background-image: url('/images/letter_background.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--grf-gray-200);
+        color: black;
+    }
+
+    .gameCardItemBack {
+
+        background-color: var(--grf-gray-100);
+        transform: rotateY(180deg);
+        box-shadow: 10px 39px 46px -45px rgba(138, 138, 138, 1);
+    }
+}
+
+.gameOverContainer,
+.winContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+
+    .gameOverContainerFooter,
+    .winContainerFooter {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.winContainer {
+    gap: 0px;
+    margin: 20px 0;
+}

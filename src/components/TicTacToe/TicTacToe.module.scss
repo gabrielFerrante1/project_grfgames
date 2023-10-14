@@ -1,0 +1,52 @@
+.levelsMenuContainer {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px 50px;
+    border: 1px solid var(--grf-gray-800);
+    border-radius: 4px;
+}
+
+.gameContainerSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 150px;
+    border-bottom: 3px solid var(--grf-gray-700);
+    border-left: 3px solid var(--grf-gray-700);
+    cursor: pointer;
+}
+
+.gameCircleIcon {
+    font-size: 50px;
+    color: var(--grf-blue);
+}
+
+.gameXIcon {
+    font-size: 60px;
+    color: var(--grf-red);
+}
+
+.gameOverContainer,
+.winContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+
+    .gameOverContainerFooter,
+    .winContainerFooter {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.winContainer {
+    gap: 0px;
+    margin: 20px 0;
+}
